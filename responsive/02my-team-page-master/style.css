@@ -55,12 +55,12 @@ main {
 }
 
 img {
-    width: 90%;
+    width: 85%;
 }
 
 .card:nth-child(2n) {
-    padding-top: 5rem;
-    height: 25rem;
+    padding-top: 6rem;
+    height: 24rem;
 }
 
 span {
@@ -70,6 +70,11 @@ span {
     right: -8rem;
     transform-origin: 0 0;
     transform: rotate(90deg);
+}
+
+.card:nth-child(2n) > span {
+    top: 6rem;
+    right: -6.5rem;
 }
 
 h6 {
