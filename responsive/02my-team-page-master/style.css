@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #FAFAFA;
+}
+
+.primary-font {
+    font-family: 'PT Serif';
+}
+
+.secondary-font {
+    font-family: 'Poppins';
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/*HEADER*/
+
+header {
+    margin-top: 7rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.6rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    margin: 3rem 0 1.4rem 0;
+}
+
+.sub-heading {
+    font-size: 1.4rem;
+    margin-right: 5rem;
+}
+
+/*MAIN*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 17rem);
+}
+
+.card {
+    background-color: beige;
+    width: 10rem;
+    height: 10rem;
+    margin: 1.2rem;
+}
