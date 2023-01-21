@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&family=Montserrat:wght@500;700&display=swap');
 html {
     font-size: 62.5%;
 }
 body {
     background-color: #FAFAFA;
+    max-width: 90rem;
+    margin: auto;
 }
 
 .primary-font {
@@ -24,6 +26,15 @@ header {
     margin-top: 7rem;
 }
 
+@media screen and (min-width: 800px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+        margin-bottom: 10rem;
+    }
+}
+
 h1 {
     font-weight: 700;
     font-size: 3.6rem;
@@ -39,6 +50,13 @@ h4 {
     margin-right: 5rem;
 }
 
+@media screen and (min-width: 800px) {
+    .sub-heading {
+        font-size: 1.8rem;
+        margin-right: 0;
+    }
+}
+
 /*MAIN*/
 
 main {
@@ -48,11 +66,31 @@ main {
     margin: 1.2rem;
 }
 
+@media screen and (min-width: 601px) {
+    main {
+        grid-template-columns: repeat(3, 17rem);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        grid-template-columns: repeat(3, 29rem);
+        gap: 3.4rem;
+    }
+}
+
 .card {
-    background-color: #f5f5dc;
+    /* background-color: beige; */
     position: relative;
     width: 16rem;
     height: 30rem;
+}
+
+@media screen and (min-width: 800px) {
+    .card {
+        width: 29rem;
+        height: 45rem;
+    }
 }
 
 span {
@@ -75,6 +113,33 @@ span {
         top: 6rem;
     }
 }
+
+@media screen and (min-width: 601px) {
+    .card:nth-child(3n-1) {
+        padding-top: 6rem;
+        height: 24rem;
+    }
+
+    .card:nth-child(3n-1) > span {
+        top: 6rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    span {
+        font-size: 1.2rem;
+        left: 27rem;
+    }
+
+    .card:nth-child(3n-1) {
+        padding-top: 9rem;
+        height: 40rem;
+    }
+
+    .card:nth-child(3n-1) > span {
+        top: 9rem;
+    }
+}
     
 img {
     width: 85%;
@@ -83,4 +148,21 @@ img {
 h6 {
     font-size: 1.4rem;
     margin: 1rem 0;
+}
+@media screen and (min-width: 800px) {
+    h6 {
+        font-size: 1.8rem;
+    }
+}
+
+footer, footer > a {
+    color: #BDBDBD;
+}
+
+footer {
+    margin: 10rem 0 1.5rem 0;
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
