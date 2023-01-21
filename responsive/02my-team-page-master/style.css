@@ -44,6 +44,8 @@ h4 {
 main {
     display: grid;
     grid-template-columns: repeat(2, 17rem);
+    gap: 1.2rem;
+    margin: 1.2rem;
 }
 
 .card {
@@ -51,30 +53,31 @@ main {
     position: relative;
     width: 16rem;
     height: 30rem;
-    margin: 1.2rem;
-}
-
-img {
-    width: 85%;
-}
-
-.card:nth-child(2n) {
-    padding-top: 6rem;
-    height: 24rem;
 }
 
 span {
     font-size: 1rem;
     position: absolute;
     top: 0;
-    right: -8rem;
+    left: 15.5rem;
+    right: -18rem;
     transform-origin: 0 0;
     transform: rotate(90deg);
 }
 
-.card:nth-child(2n) > span {
-    top: 6rem;
-    right: -6.5rem;
+@media screen and (max-width: 600px) {   
+    .card:nth-child(2n) {
+        padding-top: 6rem;
+        height: 24rem;
+    }
+    
+    .card:nth-child(2n) > span {
+        top: 6rem;
+    }
+}
+    
+img {
+    width: 85%;
 }
 
 h6 {
