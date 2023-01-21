@@ -20,6 +20,8 @@ body {
     }
 }
 
+/*HEADER*/
+
 .primary-font {
     font-family: 'PT Serif';
 }
@@ -31,8 +33,6 @@ body {
 .uppercase {
     text-transform: uppercase;
 }
-
-/*HEADER*/
 
 header {
     margin-top: 7rem;
@@ -103,11 +103,8 @@ main {
     height: 30rem;
 }
 
-@media screen and (min-width: 1080px) {
-    .card {
-        width: 29rem;
-        height: 45rem;
-    }
+img {
+    width: 85%;
 }
 
 span {
@@ -143,6 +140,11 @@ span {
 }
 
 @media screen and (min-width: 1080px) {
+    .card {
+        width: 29rem;
+        height: 45rem;
+    }
+    
     span {
         font-size: 1.2rem;
         left: 27rem;
@@ -157,15 +159,12 @@ span {
         top: 9rem;
     }
 }
-    
-img {
-    width: 85%;
-}
 
 h6 {
     font-size: 1.4rem;
     margin: 1rem 0;
 }
+
 @media screen and (min-width: 1080px) {
     h6 {
         font-size: 1.8rem;
