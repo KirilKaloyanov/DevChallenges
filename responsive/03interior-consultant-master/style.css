@@ -8,13 +8,9 @@ body {
     margin: 0;
     background-color: rgba(24, 23, 25, 1);
     /* font-family: 'Crimson Pro', serif; */
-/* font-family: 'Lora', serif; */
-font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Lora', serif; */
+    font-family: 'Montserrat', sans-serif;
 }
-
-/* nav {
-    position: relative;
-} */
 
 .hamburger {
     position: absolute;
@@ -31,6 +27,25 @@ font-family: 'Montserrat', sans-serif;
     height: 0.3rem;
     margin-bottom: 0.5rem;
     background-color: white;
+    transition: all 0.2s;
+}
+
+.middle-bar {
+    opacity: 1;
+}
+
+.hidden-middle-bar {
+    opacity: 0;
+}
+
+.rotated-upper-bar {
+    rotate: 45deg;
+    translate: 0 8px;
+}
+
+.rotated-lower-bar {
+    rotate: -45deg;
+    translate: 0 -8px;
 }
 
 .menu {
