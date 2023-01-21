@@ -8,6 +8,18 @@ body {
     margin: auto;
 }
 
+@media screen and (max-width: 1080px) {
+    body {
+        max-width: 60rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        max-width: 38rem;
+    }
+}
+
 .primary-font {
     font-family: 'PT Serif';
 }
@@ -26,7 +38,7 @@ header {
     margin-top: 7rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1080px) {
     header {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -50,7 +62,7 @@ h4 {
     margin-right: 5rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1080px) {
     .sub-heading {
         font-size: 1.8rem;
         margin-right: 0;
@@ -66,13 +78,19 @@ main {
     margin: 1.2rem;
 }
 
+@media screen and (max-width: 374px) {
+    main {
+        grid-template-columns: 17rem;
+    }
+}
+
 @media screen and (min-width: 601px) {
     main {
         grid-template-columns: repeat(3, 17rem);
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1080px) {
     main {
         grid-template-columns: repeat(3, 29rem);
         gap: 3.4rem;
@@ -80,13 +98,12 @@ main {
 }
 
 .card {
-    /* background-color: beige; */
     position: relative;
     width: 16rem;
     height: 30rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1080px) {
     .card {
         width: 29rem;
         height: 45rem;
@@ -103,7 +120,7 @@ span {
     transform: rotate(90deg);
 }
 
-@media screen and (max-width: 600px) {   
+@media screen and (min-width: 375px) and (max-width: 600px) {   
     .card:nth-child(2n) {
         padding-top: 6rem;
         height: 24rem;
@@ -125,7 +142,7 @@ span {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1080px) {
     span {
         font-size: 1.2rem;
         left: 27rem;
@@ -149,7 +166,7 @@ h6 {
     font-size: 1.4rem;
     margin: 1rem 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1080px) {
     h6 {
         font-size: 1.8rem;
     }
