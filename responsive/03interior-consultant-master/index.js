@@ -7,7 +7,15 @@ const middleBar = document.querySelector('.middle-bar');
 const upperBar = document.querySelector('.upper-bar');
 const lowerBar = document.querySelector('.lower-bar');
 
-toggleButton.addEventListener('click', function(e) {
+let collapsed = 0;
+
+toggleButton.addEventListener('click', function() {
+    if (collapsed === 0) {
+        collapsed = true;
+    } else {
+        collapsed = !collapsed;
+        menu.classList.toggle('collapsed');
+    }
     menu.classList.toggle('expanded');
     middleBar.classList.toggle('hidden-middle-bar');
     upperBar.classList.toggle('rotated-upper-bar');
