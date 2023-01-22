@@ -5,11 +5,39 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     background-color: rgba(24, 23, 25, 1);
     /* font-family: 'Crimson Pro', serif; */
     /* font-family: 'Lora', serif; */
     font-family: 'Montserrat', sans-serif;
+    position: relative;
+    max-width: 780px;
+
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        max-width: 1180px;
+    }
+}
+
+/* MENU */
+
+
+@media screen and (min-width: 900px) {
+    nav {
+    height: 10rem;
+    }
+}
+
+.this-article {
+    position: absolute;
+    color: white;
+    width: fit-content;
+    border: 1px solid white;
+    padding: 1rem;
+    margin: 2rem;
+    z-index: 2;
 }
 
 .hamburger {
@@ -22,12 +50,18 @@ body {
     z-index: 2;
 }
 
+@media screen and (min-width: 800px) {
+    .hamburger {
+        display: none;
+    }
+}
+
 .hamburger > div {
     width: 100%;
     height: 0.3rem;
     margin-bottom: 0.5rem;
     background-color: white;
-    transition: all 0.2s;
+    transition: all 0.1s ease-in;
 }
 
 .middle-bar {
@@ -65,45 +99,29 @@ body {
     flex-direction: column;
     gap: 3rem;
     justify-content: center;
-    visibility: hidden;
+    transform: scaleY(0);
     align-items: center;
-    animation: expand 0.3s ease-in;
 }
 
-@keyframes expand {
-    0% {
-        height: 100%;
-        visibility: visible;
-    }
-    50% {
-        height: 30%;
-        visibility: hidden;
-    }
-    100% {
-        height: 0%;
-        visibility: hidden;
+@media screen and (min-width: 800px) {
+    .menu {
+        transform: scaleY(1);
+        height: max-content;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 }
 
-@keyframes collapsed {
-    0% {
-        height: 0%;
-        visibility: hidden;
-    }
-    50% {
-        height: 30%;
-        visibility: hidden;
-    }
-    100% {
-        height: 100%;
-        visibility: visible;
-    }
+.collapsed {
+    height: 0%;
+    transform: scaleY(0);
+    transition: height 0.2s, transform 0.3s;
 }
 
 .expanded {
     height: 100%;
-    visibility: visible;
-    animation: collapsed 0.3s ease-in;
+    transform: scaleY(1);
+    transition: height 0.6s, transform 0.1s;
 }
 
 .menu > li:hover {
@@ -118,6 +136,146 @@ body {
     list-style: none;
 }
 
+@media screen and (min-width: 800px) {
+    .menu > li {
+        margin: 2rem 3rem;
+    }
+
+    .menu > li:last-child {
+        margin-right: 0;
+    }
+}
+
+/* MAIN */
+
+body > main {
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+    body > main {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+}
+
+.post {
+    color: white;
+}
+
+.post > h1 {
+    font-size: 3.6rem;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width: 900px) {
+    .post > h1 {
+        margin-top: 10rem;
+        font-size: 4.8rem;
+    }
+}
+
+.post > p {
+    margin: 0 11rem 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+
+@media screen and (min-width: 900px) {
+    .post > p {
+        font-size: 2.4rem;
+    }
+}
+
+.post > a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    margin: 2rem 0 3rem;
+}
+
+
+@media screen and (min-width: 900px) {
+    .post > a {
+    font-size: 1.8rem;
+    }
+}
+
 img{
     width: 100%;
+}
+
+.card-container {
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    left: 4rem;
+    right: 4rem;
+    top: 80%;
+    max-width: 40rem;
+    min-width: 20rem;
+    padding: 1rem;
+    color: white;
+    background-color: hsl(270, 4%, 9%);
+    box-shadow: 0px 4px 2px 1px hsl(270, 4%, 7%);
+}
+
+@media screen and (min-width: 800px) {
+    .card{
+        left: auto;
+    }
+}
+
+.card > header {
+    display: flex;
+}
+
+header > img {
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    margin: 0 2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.4rem 0;
+}
+
+h6 {
+    font-size: 1rem;
+    color: hsl(0, 0%, 51%);
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    margin-right: 4rem;
+}
+
+/* FOOTER */
+footer, footer > a {
+    color: #BDBDBD;
+}
+
+footer {
+    margin: 13rem 0 1.5rem 0;
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
