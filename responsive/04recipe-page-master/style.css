@@ -10,7 +10,7 @@
 }
 
 .orange-icon{
-    color: orange;
+    color: hsl(39, 100%, 50%);
 }
 
 .gray-icon{
@@ -76,10 +76,47 @@ h3 {
 }
 
 .ingredient {
-    display: flex;
-    align-items: flex-start;
-    gap: .5rem;
+    position: relative;
     margin-bottom: .5rem;
     font-size: 1.4rem;
     line-height: 1.6;
 }
+
+label {
+    display: block;
+    padding-left: 3rem;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -0.3rem;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 6px;
+    border: 1px solid hsl(0, 0%, 51%);
+  }
+
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: .6rem;
+    top: .2rem;
+    width: .5rem;
+    height: 1rem;
+    border: solid hsl(39, 100%, 50%);
+    border-width: 0 .24rem .24rem 0;
+    transform: rotate(45deg);
+  }
+
+  input:checked ~ .checkmark::after {
+    display: block;
+  }
