@@ -73,11 +73,16 @@ h3 {
     font-size: 1.8rem;
     font-weight: 400;
     font-style: italic;
+    margin-bottom: 3rem;
+}
+
+div ~ h3 {
+    margin-top: 4rem;
 }
 
 .ingredient {
     position: relative;
-    margin-bottom: .5rem;
+    margin-bottom: 1.5rem;
     font-size: 1.4rem;
     line-height: 1.6;
 }
@@ -119,4 +124,9 @@ input {
 
   input:checked ~ .checkmark::after {
     display: block;
+  }
+
+  .italic-500 {
+    font-style: italic;
+    font-weight: 500;
   }
