@@ -98,7 +98,7 @@ header > img {
     }
 }
 
-article > header {
+article > header > div{
     display: grid;
     grid-template-areas: 
     'servings servings servings';
@@ -107,7 +107,7 @@ article > header {
 }
 
 @media screen and (min-width: 800px) {
-    article > header {
+    article > header > div {
         display: block;
     }
 }
