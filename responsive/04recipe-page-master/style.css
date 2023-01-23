@@ -9,14 +9,17 @@
   'opsz' 48;
 }
 
-.orange-icon{
+.orange {
     color: hsl(39, 100%, 50%);
 }
 
-.gray-icon{
+.gray{
     color: hsl(0, 0%, 35%);
 }
 
+.lightgray{
+    color: hsl(0, 0%, 74%);
+}
 
 
 html {
@@ -60,6 +63,33 @@ h1 {
 header > img {
     width: 100%;
     margin-top: 2rem;
+}
+
+article > header {
+    display: grid;
+    grid-template-areas: 
+    'servings servings servings';
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+article > header > div:first-of-type {
+    grid-area: servings;
+}
+
+.kvp{
+    display: flex;
+    gap: 5px;
+}
+
+.key {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.value {
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 h2 {
@@ -130,3 +160,20 @@ input {
     font-style: italic;
     font-weight: 500;
   }
+
+
+
+
+  /* FOOTER */
+footer,
+footer > a {
+  color: #bdbdbd;
+}
+
+footer {
+  margin: 13rem 0 1.5rem 0;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
