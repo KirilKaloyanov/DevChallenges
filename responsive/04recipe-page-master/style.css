@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
 
-:root {
-    --small: 600px;
-    --middle: 800px;
-    --large: 1000px;
-}
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -34,7 +29,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (min-width: var(--small)) {
+@media screen and (min-width: 800px) {
     body{
         margin: 8px auto;
         max-width: 980px;
@@ -56,6 +51,7 @@ h1 {
 }
 
 .caption {
+    max-width: 65rem;
     display: flex;
     gap: 1rem;
     align-items: flex-start;
@@ -86,7 +82,21 @@ header > img {
 
 
 /*ICONS*/
+@media screen and (min-width: 800px) {
+    article {
+        display: grid;
+        grid-template-areas: 'leftSide rightSide';
+    }
+    
+    article > header {
+        grid-area: rightSide;
+        padding: 4rem;
+    }
 
+    article > main {
+        grid-area: leftSide;
+    }
+}
 
 article > header {
     display: grid;
@@ -96,13 +106,39 @@ article > header {
     margin: 3rem 0;
 }
 
+@media screen and (min-width: 800px) {
+    article > header {
+        display: block;
+    }
+}
+
 article > header > div:first-of-type {
     grid-area: servings;
+}
+
+
+@media screen and (min-width: 800px) {
+    article > header > div {
+        box-shadow: 1px 1px 15px hsl(0, 0%, 90%);
+        padding: 3rem 0;
+        border-radius: 1rem;
+    }
 }
 
 .kvp{
     display: flex;
     gap: 5px;
+}
+
+@media screen and (min-width: 800px) {
+    .kvp {
+        margin: 3rem 4rem;
+        gap: 1rem;
+    }
+
+    .kvp > span {
+        font-size: 3.5rem;
+    }
 }
 
 .key {
