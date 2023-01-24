@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    max-width: 900px;
+    /* max-width: 900px; */
     /* background-color: beige; */
 }
 
@@ -108,11 +108,16 @@ body {
 }
 
 main {
+    width: fit-content;
+    margin: auto;
+}
+
+.photos {
     display: grid;
     gap: 2vw;
-    grid-template-columns: repeat(3, clamp(10rem, 32%, 30rem));
+    grid-template-columns: repeat(3, clamp(10rem, 30vw, 30rem));
     grid-template-rows: repeat(3, clamp(10rem, 30vw, 30rem));
-    margin: 4rem 1rem;
+    margin: 4rem auto;
 }
 
 img {
@@ -123,6 +128,7 @@ img {
 .photo {
     border-radius: 1rem;
     background-size: cover;
+    background-position: center center;
     box-shadow: 1px 4px 5px var(--grey-90);
 }
 
