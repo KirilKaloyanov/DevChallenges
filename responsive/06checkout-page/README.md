@@ -40,6 +40,10 @@
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
+This exercise helped me improve my skill to differentiate between cases where to use grid and where to use flex layout. 
+
+A new thing was how to style a drop-down select input.
+
 - Where can I see your demo?
 - What was your experience?
 - What have you learned/improved?
