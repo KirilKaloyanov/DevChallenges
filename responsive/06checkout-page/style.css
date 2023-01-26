@@ -8,6 +8,10 @@
     'opsz' 48;
     color: var(--grey-828282);
   }
+
+.fa-icon {
+    color: var(--grey-828282);
+}
   
 :root {
     --grey-f2f2f2: hsl(0, 0%, 95%);
@@ -136,11 +140,9 @@ section > div:first-of-type {
 
 /* FORM*/
 
-form {
-    margin-top: 4rem;
-}
 
 h3 {
+    margin-top: 4rem;
     font-size: 1.4rem;
 }
 
@@ -161,7 +163,7 @@ label {
 .field > span {
     margin: 1rem;
     margin-right: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 input {
@@ -180,4 +182,14 @@ input:focus {
 ::placeholder {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem
+}
+
+.form-grid-item-wide {
+    grid-column: span 2;
 }
