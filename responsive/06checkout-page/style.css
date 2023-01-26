@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --grey-f2f2f2: hsl(0, 0%, 95%);
+    --grey-51: hsla(0, 0%, 51%, 1);
+    --grey-74: hsla(0, 0%, 74%, 1);
+    --grey-31: hsl(0, 0%, 31%);
+    --grey-E0E0E0: hsl(0, 0%, 88%);
+    --orange-f2994a: hsl(28, 87%, 62%);
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* background-color: beige; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+main {
+    display: grid;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .contact {
+        order: 1;
+    }
+
+    .cart {
+        order:2
+    }
+}
+
+
+
+/* CART */
+
+.cart {
+    background-color: var(--grey-f2f2f2);
+    border-radius: 1rem;
+    padding: 0 2.6rem 1rem 2.6rem;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 9fr 11fr;
+    gap: 2rem;
+    margin: 2.6rem 0;
+}
+
+article > img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+article > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h4 {
+    margin: 0 0 2rem 0;
+    font-size: 1.2rem;
+}
+
+.discount-price {
+    font-size: 1.4rem;
+    color: var(--orange-f2994a);
+}
+
+.former-price {
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.counter {
+    border: 1px solid var(--grey-51);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10vw;
+}
+
+.plus-minus {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    margin: 1.5rem 1rem;
+    background-color: var(--grey-E0E0E0);
+    font-size: 1.5rem;
+    color: var(--grey-51);
+}
+
+.item-count {
+    font-size: 1.6rem;
+}
+
+section > div {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--grey-74);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+
+section > div:first-of-type {
+    margin-top: 8rem;
+}
+
+
+
+/* FORM*/
+
+form {
+    margin-top: 4rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    color: var(--grey-31);
+}
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
