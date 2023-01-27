@@ -126,7 +126,7 @@
               <span class="material-symbols-outlined">
                 location_city
               </span>
-              <select required id="country">
+              <select required id="country" class="placeholder">
                 <option selected disabled>Your country...</option>
                 <option>Bulgaria</option>
                 <option>Croatia</option>
@@ -156,5 +156,17 @@
       </form>
     </main>
   </body>
+
+  <script>
+    let selectElement = document.querySelector('select');
+
+    selectElement.addEventListener('change', function() {
+      if (selectElement.value == 'Your country...') {
+        selectElement.classList.add('placeholder')
+      } else {
+        selectElement.classList.remove('placeholder')
+      }
+    })
+  </script>
 
 </html>

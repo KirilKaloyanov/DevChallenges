@@ -37,14 +37,20 @@ h2 {
     font-size: 2.4rem;
 }
 
-main {
-    display: grid;
-    gap: 2vw;
+@media screen and (min-width: 900px) {
+    h2 {
+        font-size: 3.6rem;
+    }
 }
 
-@media screen and (min-width: 800px) {
+main {
+    display: grid;
+    gap: 8vw;
+}
+
+@media screen and (min-width: 900px) {
     main {
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 5fr 4fr;
     }
 
     .contact {
@@ -100,6 +106,16 @@ h4 {
     text-decoration: line-through;
 }
 
+@media screen and (min-width: 900px) {
+    h4, .discount-price {
+        font-size: 1.6rem;
+    }
+    
+    .former-price {
+        font-size: 1.2rem;
+    }
+}
+
 .counter {
     border: 1px solid var(--grey-828282);
     border-radius: 1rem;
@@ -143,6 +159,12 @@ section > div:first-of-type {
     margin-top: 8rem;
 }
 
+@media screen and (min-width: 900px) {
+    section > div > span:first-of-type {
+        font-size: 1.8rem;
+    }
+}
+
 
 
 /* FORM*/
@@ -153,11 +175,23 @@ h3 {
     font-size: 1.4rem;
 }
 
+@media screen and (min-width: 900px) {
+    h3 {
+        font-size: 1.8rem;
+    }
+}
+
 label {
     display: block;
     font-size: 1rem;
     margin-bottom: .5rem;
     color: var(--grey-4f4f4);
+}
+
+@media screen and (min-width: 900px) {
+    label {
+        font-size: 1.2rem;
+    }
 }
 
 .field {
@@ -182,8 +216,26 @@ input, select {
     color: var(--grey-333333);
 }
 
+@media screen and (min-width: 900px) {
+    input, select {
+        font-size: 1.6rem;
+    }
+}
+
 input, select:focus {
     outline: none;
+}
+
+.placeholder {
+    color: var(--grey-828282);
+}
+
+option {
+    color: var(--grey-333333);
+}
+
+option:disabled {
+    color: var(--grey-828282);
 }
 
 input[type='submit'] {
@@ -198,6 +250,12 @@ input[type='submit'] {
 ::placeholder {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
+}
+
+@media screen and (min-width: 900px) {
+    ::placeholder {
+        font-size: 1.6rem;
+    }
 }
 
 .form-grid {
@@ -223,6 +281,13 @@ input[type='checkbox'] {
 
 label > div {
     margin-left: 2.5rem;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+    label > div {
+        font-size: 1.2rem;
+    }
 }
 
 .submit-button {
