@@ -224,19 +224,6 @@ input {
     border: 1px solid hsl(0, 0%, 51%);
   }
 
-@media screen and (max-width: 800px) {
-  .checkmark::after {
-    content: "";
-    position: absolute;
-    display: none;
-    left: 0.3rem;
-    top: 0.3rem;
-    width: .5rem;
-    height: 1rem;
-    border: solid hsl(39, 100%, 50%);
-    border-width: 0 .24rem .24rem 0;
-  }
-}
   .checkmark::after {
     content: "";
     position: absolute;
