@@ -68,4 +68,3 @@ To find the solution for styling the placeholder for the select element I used [
 ## Contact
 
 - GitHub [@KirilKaloyanov](https://github.com/KirilKaloyanov)
-
