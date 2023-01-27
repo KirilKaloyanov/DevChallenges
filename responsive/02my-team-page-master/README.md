@@ -37,6 +37,8 @@
 
 ![screenshot](https://i.ibb.co/hgjznp6/screenshot.png)
 
+The difficulty with this challenge was to use the proper CSS selectors, so that on large screens the columns with offset to be 2nd and 5th card, but on small screens to be every even card. The solution was to use nth-child selector with the formula 3n-1 and 2n respectively.
+
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
