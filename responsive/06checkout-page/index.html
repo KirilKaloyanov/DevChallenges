@@ -40,7 +40,7 @@
             </div>
             <div class="counter">
               <span class="plus-minus">-</span>
-              <span class="item-count">1</span>
+              <input class="item-count" type="number" value="1" />
               <span class="plus-minus">+</span>
             </div>
           </div>
@@ -55,7 +55,7 @@
             </div>
             <div class="counter">
               <span class="plus-minus">-</span>
-              <span class="item-count">1</span>
+              <input class="item-count" type="number" value="1" />
               <span class="plus-minus">+</span>
             </div>
           </div>
@@ -69,7 +69,7 @@
           <span>$148.98</span>
         </div>
       </section>
-      <form class="contact">
+      <form class="contact" onsubmit="alert('Submission successful!');">
         <h3>
           Contact information
         </h3>
@@ -86,7 +86,7 @@
           <span class="material-symbols-outlined">
             phone
           </span>
-          <input type="text" id="phone" placeholder="Enter your phone..." />
+          <input required type="text" id="phone" placeholder="Enter your phone..." />
         </div>
         
         <h3>
@@ -99,7 +99,7 @@
               <span class="fa-icon">
                 <i class="fa-solid fa-circle-user"></i>
               </span>
-              <input type="text" id="name" placeholder="Enter your full name..." />
+              <input required type="text" id="name" placeholder="Enter your full name..." />
             </div>
           </div>
           <div class="form-grid-item-wide">
@@ -108,7 +108,7 @@
               <span class="material-symbols-outlined">
                 <i class="fa-sharp fa-solid fa-house"></i>
               </span>
-              <input type="text" id="address" placeholder="Your address..." />
+              <input required type="text" id="address" placeholder="Your address..." />
             </div>
           </div>
           <div class="form-grid-item-wide">
@@ -117,7 +117,7 @@
               <span class="material-symbols-outlined">
                 location_city
               </span>
-              <input type="text" id="city" placeholder="Your city..." />
+              <input required type="text" id="city" placeholder="Your city..." />
             </div>
           </div>
           <div>
@@ -126,7 +126,12 @@
               <span class="material-symbols-outlined">
                 location_city
               </span>
-              <input type="text" id="country" placeholder="Your country..." />
+              <select required id="country">
+                <option selected disabled>Your country...</option>
+                <option>Bulgaria</option>
+                <option>Croatia</option>
+                <option>Estonia</option>
+              </select>
             </div>
           </div>
           <div>
@@ -135,13 +140,21 @@
               <span class="material-symbols-outlined">
                   markunread_mailbox
               </span>
-              <input type="text" id="postal" placeholder="Your postal code..." />
+              <input required type="text" id="postal" placeholder="Your postal code..." />
             </div>
           </div>
+          <div class="form-grid-item-wide">
+            <label for="checker">
+              <input type="checkbox" id="checker">
+              <div>Save this information for next time</div>
+            </label>
+            
+          </div>
         </div>
-
-<input type="submit" value="Submit" />
+        
+        <div class="submit-button"><input type="submit" value="Submit" /></div>
       </form>
     </main>
   </body>
+
 </html>

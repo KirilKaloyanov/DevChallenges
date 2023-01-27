@@ -39,6 +39,7 @@ h2 {
 
 main {
     display: grid;
+    gap: 2vw;
 }
 
 @media screen and (min-width: 800px) {
@@ -74,6 +75,7 @@ article {
 
 article > img {
     width: 100%;
+    min-width: 10rem;
     border-radius: 1rem;
 }
 
@@ -101,15 +103,16 @@ h4 {
 .counter {
     border: 1px solid var(--grey-828282);
     border-radius: 1rem;
+    max-width: 20rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 10vw;
 }
 
 .plus-minus {
     width: 2rem;
     height: 2rem;
+    padding: 0 .6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,6 +125,10 @@ h4 {
 
 .item-count {
     font-size: 1.6rem;
+    text-align: center;
+    text-indent: 1rem;
+    min-width: 3rem;
+    background-color: var(--grey-f2f2f2);
 }
 
 section > div {
@@ -166,7 +173,7 @@ label {
     font-size: 1.5rem;
 }
 
-input {
+input, select {
     width: 100%;
     border: 0;
     margin-right: 2px;
@@ -175,9 +182,18 @@ input {
     color: var(--grey-333333);
 }
 
-input:focus {
+input, select:focus {
     outline: none;
 }
+
+input[type='submit'] {
+    width: 15rem;
+    height: 5rem;
+    background-color: var(--orange-f2994a);
+    border-radius: 5px;
+    color: white;
+}
+
 
 ::placeholder {
     font-family: 'Montserrat', sans-serif;
@@ -187,9 +203,30 @@ input:focus {
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem
+    column-gap: 2rem;
 }
 
 .form-grid-item-wide {
     grid-column: span 2;
+}
+
+.form-grid-item-wide:last-child {
+    position: relative;
+}
+
+input[type='checkbox'] {
+    width: auto;
+    margin-right: 1rem;
+    margin-top: 0rem;
+    position: absolute;
+}
+
+label > div {
+    margin-left: 2.5rem;
+}
+
+.submit-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
