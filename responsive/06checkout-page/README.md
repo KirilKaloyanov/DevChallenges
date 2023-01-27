@@ -27,35 +27,27 @@
 ## Table of Contents
 
 - [Overview](#overview)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
-
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+![screenshot](https://i.ibb.co/99NGGjR/screenshot.png)
 
 This exercise helped me improve my skill to differentiate between cases where to use grid and where to use flex layout. 
 
-A new thing was how to style a drop-down select input.
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+A new thing was how to style a drop-down select input. The difficulty was to simulate adding a placeholder and style it separately. The solution was to add a disebled selected option. Then add a class to the select element with lightgray color to be used for the placeholder option. Then I added darkgrey color to all the options to escape from the lightgrey color of the select element. I also needed to add the lightgrey color to the disabled option. It seemed that it doesn't matter what color I choose. As soon I added option:disabled pseudo-class the color changed to lightgrey. Finally using JS I dinamically removed the placeholder class from the select element once the change event fired.
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- HTML
+- CSS
+- JS
 
 ## Features
 
@@ -64,31 +56,16 @@ A new thing was how to style a drop-down select input.
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
 
 
-## How To Use
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
-
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+To find the solution for styling the placeholder for the select element I used [ChatGPT](https://chat.openai.com/) with the following questions:
+- I have a select element in html. Can I add a placeholder for it?
+- How to style the placeholder option?
+- Give an example of how I can change the color of the text inside the <select> element when the placeholder is selected?
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@KirilKaloyanov](https://github.com/KirilKaloyanov)
+
