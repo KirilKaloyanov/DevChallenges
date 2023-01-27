@@ -65,7 +65,3 @@ To find the solution for styling the placeholder for the select element I used [
 - How to style the placeholder option?
 - Give an example of how I can change the color of the text inside the <select> element when the placeholder is selected?
 
-## Contact
-## Contact
-
-- GitHub [@KirilKaloyanov](https://github.com/KirilKaloyanov)
