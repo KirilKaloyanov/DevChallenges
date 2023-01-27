@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Checkout page</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://kirilkaloyanov.github.io/DevChallenges/responsive/06checkout-page/index.html">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/KirilKaloyanov/DevChallenges/tree/main/responsive/06checkout-page">
       Solution
     </a>
     <span> | </span>
@@ -39,7 +39,7 @@
 
 This exercise helped me improve my skill to differentiate between cases where to use grid and where to use flex layout. 
 
-A new thing was how to style a drop-down select input. The difficulty was to simulate adding a placeholder and style it separately. The solution was to add a disebled selected option. Then add a class to the select element with lightgray color to be used for the placeholder option. Then I added darkgrey color to all the options to escape from the lightgrey color of the select element. I also needed to add the lightgrey color to the disabled option. It seemed that it doesn't matter what color I choose. As soon I added option:disabled pseudo-class the color changed to lightgrey. Finally using JS I dinamically removed the placeholder class from the select element once the change event fired.
+A new thing was how to style a drop-down select input. The difficulty was to simulate adding a placeholder and style it separately. The solution was to add a disabled selected option. Then add a class to the select element with lightgray color to be used for the placeholder option. Then I added darkgrey color to all the options to escape from the lightgrey color of the select element. I also needed to add the lightgrey color to the disabled option. It seemed that it doesn't matter what color I choose. As soon I added option:disabled pseudo-class the color changed to lightgrey. Finally using JS I dinamically removed the placeholder class from the select element once the change event fired.
 
 ### Built With
 
