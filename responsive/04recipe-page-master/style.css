@@ -229,13 +229,12 @@ input {
     content: "";
     position: absolute;
     display: none;
-    left: .6rem;
-    top: .2rem;
+    left: 0.3rem;
+    top: 0.3rem;
     width: .5rem;
     height: 1rem;
     border: solid hsl(39, 100%, 50%);
     border-width: 0 .24rem .24rem 0;
-    transform: rotate(45deg);
   }
 }
   .checkmark::after {
