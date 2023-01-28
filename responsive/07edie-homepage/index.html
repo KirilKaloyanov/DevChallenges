@@ -30,17 +30,17 @@
     <header>
       <div class="title">Edie</div>
       <nav>
-        <div class="hamburger">
-          <div class="bar"></div>
+        <div class="hamburger" onclick="toggle()">
+          <div class="bar upper-bar"></div>
           <div class="bar middle-bar"></div>
-          <div class="bar"></div>
+          <div class="bar lower-bar"></div>
         </div>
-        <ul>
-          <li>Home</li>
-          <li>Services</li>
-          <li>Our Works</li>
-          <li>Clients</li>
-          <li>Contact</li>
+        <ul class="menu">
+          <li class="list-item">Home</li>
+          <li class="list-item">Services</li>
+          <li class="list-item">Our Works</li>
+          <li class="list-item">Clients</li>
+          <li class="list-item">Contact</li>
         </ul>
       </nav>
     </header>
@@ -55,4 +55,18 @@
       - devChallenges.io
     </footer>
   </body>
+  <script>
+    const menuItems = [...document.querySelectorAll('.list-item')];
+    const upperBar = document.querySelector('.upper-bar');
+    const middleBar = document.querySelector('.middle-bar');
+    const lowerBar = document.querySelector('.lower-bar');
+    function toggle() {
+      upperBar.classList.toggle('upper-bar-rotated')
+      middleBar.classList.toggle('middle-bar-hidden');
+      lowerBar.classList.toggle('lower-bar-rotated');
+      for (let item of menuItems) {
+        item.classList.toggle('list-item-expanded')
+      }
+    }
+  </script>
 </html>
