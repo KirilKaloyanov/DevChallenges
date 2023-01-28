@@ -14,6 +14,7 @@ header {
 .title {
     font-family: 'Heebo', sans-serif;
     font-size: 2.4rem;
+    padding: 2rem;
 }
 
 nav {
@@ -68,12 +69,22 @@ nav {
     padding: 1rem;
 }
 
+@media screen and (min-width: 800px) {
+    .menu {
+        position: static;
+        display: flex;
+    }
+}
+
 .list-item {
     font-size: 2.4rem;
+    padding: 1rem;
     height: 0;
     transform: scaleY(0);
-    transition: height .3s ease-in-out, transform .3s ease-in-out;
-    padding: 1rem;
+}
+
+.list-item-transition {    
+    transition: height 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .list-item-expanded {
@@ -81,21 +92,14 @@ nav {
     transform: scaleY(1);
 }
 
-
 @media screen and (min-width: 800px) {
-    .menu {
-        position: static;
-        display: flex;
-    }
-
-    .menu > li {
-        margin: 0 2rem;
+    .list-item {
+        height: 2.4rem;
+        transform: scaleY(1);
+        margin: 0 1.4rem;
     }
 }
 
-@media screen and (max-width: 800px) {
-
-}
 
 
   /* FOOTER */
