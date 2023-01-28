@@ -24,6 +24,7 @@ nav {
 .hamburger {
     width: 1.8rem;
     padding: 1rem;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {
@@ -41,11 +42,11 @@ nav {
 
 .upper-bar-rotated {
     rotate: 45deg;
-    translate: 0 5px;
+    translate: 0 6px;
 }
 
 .middle-bar {
-    margin: .25rem 0;
+    margin: .3rem 0;
     transition: visibility 0s;
 }
 
@@ -55,7 +56,7 @@ nav {
 
 .lower-bar-rotated {
     rotate: -45deg;
-    translate: 0 -5px;
+    translate: 0 -6px;
 }
 
 .menu {
@@ -65,22 +66,21 @@ nav {
     margin: 0;
     padding: 0;
     list-style: none;
-    background-color: white;
-    padding: 1rem;
 }
 
 @media screen and (min-width: 800px) {
     .menu {
+        padding: 2rem;
         position: static;
         display: flex;
     }
 }
 
 .list-item {
-    font-size: 2.4rem;
-    padding: 1rem;
     height: 0;
+    font-size: 2.4rem;
     transform: scaleY(0);
+    padding: 1rem;
 }
 
 .list-item-transition {    
@@ -88,13 +88,14 @@ nav {
 }
 
 .list-item-expanded {
+    background-color: rgb(255, 255, 255);
     height: 2.4rem;
     transform: scaleY(1);
 }
 
 @media screen and (min-width: 800px) {
     .list-item {
-        height: 2.4rem;
+    height: 2.4rem;
         transform: scaleY(1);
         margin: 0 1.4rem;
     }
