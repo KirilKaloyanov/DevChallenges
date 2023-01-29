@@ -15,7 +15,16 @@ header {
     font-family: 'Heebo', sans-serif;
     font-size: 2.4rem;
     padding: 2rem;
+    margin-bottom: 7vw;
 }
+
+@media screen and (max-width: 800px) {
+    .title {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* MENU */
 
 nav {
     position: relative;
@@ -80,7 +89,7 @@ nav {
     height: 0;
     font-size: 2.4rem;
     transform: scaleY(0);
-    padding: 1rem;
+    cursor: pointer;
 }
 
 .list-item-transition {    
@@ -89,16 +98,44 @@ nav {
 
 .list-item-expanded {
     background-color: rgb(255, 255, 255);
-    height: 2.4rem;
+    height: 4rem;
+    padding-left: 1rem;
     transform: scaleY(1);
 }
 
 @media screen and (min-width: 800px) {
     .list-item {
-    height: 2.4rem;
+        height: 3.4rem;
         transform: scaleY(1);
         margin: 0 1.4rem;
     }
+}
+
+/* MAIN */
+.container {
+    margin: 0 4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.blue-text {
+    color: hsla(202, 71%, 52%, 1);
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.hero-image{
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    border-radius: 1.5rem;
 }
 
 
