@@ -147,15 +147,19 @@ nav {
 }
 
 /* MAIN */
-/* .container, .slogan, .narrow-container {
-    margin: 0 4rem;
-} */
 
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: 1000px) {
     .slogan {
         padding: 0 30vw 0 8rem;
     }
-    
+}
+
+@media screen and (min-width: 800px) {    
+    .slogan {
+        padding-left: 8rem;
+    }
+
     .narrow-container {
         padding-left:8rem;
         width: clamp(30rem, 45vw, 40rem);
@@ -273,7 +277,7 @@ h3.container {
     margin-bottom: 3rem;
 }
 
-@media screen and (min-width: 800px) {    
+@media screen and (min-width: 1000px) {    
    .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
