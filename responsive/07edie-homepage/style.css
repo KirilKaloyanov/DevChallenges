@@ -27,6 +27,18 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
+    margin: 0;
+}
+
+.wide-screen-wrapper {
+    margin: 0 1rem;
+}
+
+
+@media screen and (min-width: 800px) {
+    .wide-screen-wrapper {
+        margin: 0 clamp(4rem, 19vw, 10rem);
+    }
 }
 
 header {
@@ -37,7 +49,7 @@ header {
 .title {
     font-family: 'Heebo', sans-serif;
     font-size: 2.4rem;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 7vw;
 }
 
@@ -135,14 +147,31 @@ nav {
 }
 
 /* MAIN */
-.container {
+/* .container, .slogan, .narrow-container {
     margin: 0 4rem;
+} */
+
+@media screen and (min-width: 800px) {
+    .slogan {
+        padding: 0 30vw 0 8rem;
+    }
+    
+    .narrow-container {
+        padding-left:8rem;
+        width: clamp(30rem, 45vw, 40rem);
+    }
 }
 
 h4 {
     font-size: 1.2rem;
     font-weight: 400;
     margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+    h4 {
+        font-size: 1.8rem;
+    }
 }
 
 .blue-text {
@@ -153,6 +182,12 @@ h2 {
     font-size: 2.4rem;
     font-weight: 500;
     margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+    h2 {
+        font-size: 4.8rem;
+    }
 }
 
 .hero-image{
@@ -223,9 +258,28 @@ input[type=submit] {
     height: 12vw;
 }
 
-h2.container {
+h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 800px) {
+    h3 {
+        font-size: 3.6rem;
+    }
+}
+
+h3.container {
     margin-bottom: 3rem;
 }
+
+@media screen and (min-width: 800px) {    
+   .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .card {
     padding: 6rem 3rem;
     margin: 0 1rem;
@@ -255,7 +309,7 @@ h2.container {
     background-color: var(--red);
 }
 
-h3 {
+h3.bold {
     font-weight: 700;
     font-size: 2.4rem;
 }
@@ -302,6 +356,7 @@ button {
     }
 }
 
+
 article > img {
     margin-top: 2rem;
     width: 100%;
@@ -315,10 +370,22 @@ article > img {
     margin-top: 1.4rem;
 }
 
+@media screen and (min-width: 800px) {
+    .green-subtitle {
+        font-size: 1.4rem;
+    }
+}
+
 h5 {
     margin-top: 0;
     font-size: 1.8rem;
     font-weight: 500;
+}
+
+@media screen and (min-width: 800px) {
+    h5 {
+        font-size: 2.4rem;
+    }
 }
 
 .read-more {
@@ -326,6 +393,7 @@ h5 {
     color: var(--blue);
     font-weight: 500;
     font-size: 1.8rem;
+    margin-left: 1rem;
 }
 
 @media screen and (min-width: 800px) {   
@@ -362,14 +430,14 @@ h5 {
     margin-bottom: 0;
 }
 
-h1 {
+.team > div > h3 {
     font-size: 3.6rem;
     font-weight: 500;
     margin: 0;
     line-height: 1.5;
 }
 
-h1 ~ .middle-p {
+.team > div > .middle-p {
     margin: 0;
 }
 
@@ -409,7 +477,7 @@ h1 ~ .middle-p {
 .testimonial {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 12rem auto;
     gap: 2rem;
 }
 
@@ -423,6 +491,16 @@ h1 ~ .middle-p {
     color: var(--grey828282);
 }
 
+@media screen and (min-width: 800px) {
+    .customer > h3 {
+        font-size: 2.4rem;
+    }
+
+    .customer.grey-text {
+        font-size: 1.8rem;
+    }
+}
+
 
 /* end of the customer */
 
@@ -431,6 +509,17 @@ footer {
     padding: 4rem;
     background-color: var(--black);
     color: white;
+}
+
+@media screen and (min-width:800px) {
+    footer {
+        padding: 4rem 0;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .footer-menu{
@@ -454,7 +543,7 @@ footer {
 
 
   .copy {
-    margin: 13rem 0 1.5rem 0;
+    margin: 3rem 0 1.5rem 0;
     font-family: "Montserrat";
     font-size: 1.4rem;
     font-weight: 400;
