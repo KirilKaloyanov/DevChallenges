@@ -36,7 +36,7 @@
 
 ## Overview
 
-<!-- ![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png) -->
+![screenshot](https://photos.app.goo.gl/wp6Zfis1b1UY7uzq7)
 
 With this challenge I spent most time making the drop-down menu for small screens. I learned that even if I give a container a zero height, the text nodes inside stil have a height unless I style them explicitly as well. I dynamically add and remove the transition class with JS in order to escape from having the transition when changing the screen width. 
 
