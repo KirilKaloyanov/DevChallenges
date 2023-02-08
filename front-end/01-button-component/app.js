@@ -1,4 +1,4 @@
-class Button extends HTMLElement {
+class Button extends HTMLButtonElement {
     constructor () {
         super();
 
@@ -12,4 +12,4 @@ class Button extends HTMLElement {
     }
 }
 
-customElements.define('but-ton', Button)
+customElements.define('but-ton', Button, {extends: 'button'});
